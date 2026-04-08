@@ -54,41 +54,6 @@
     </svg>`;
   }
 
-  function showToast(msg) {
-    const existing = document.getElementById('cgpt-dark-toast');
-    if (existing) existing.remove();
-    const toast = document.createElement('div');
-    toast.id = 'cgpt-dark-toast';
-    toast.textContent = msg;
-    Object.assign(toast.style, {
-      position: 'fixed',
-      bottom: '24px',
-      left: '50%',
-      transform: 'translateX(-50%) translateY(10px)',
-      background: 'rgba(30,30,30,0.92)',
-      color: '#fff',
-      padding: '8px 18px',
-      borderRadius: '999px',
-      fontSize: '13px',
-      fontFamily: 'system-ui, sans-serif',
-      zIndex: '99999',
-      pointerEvents: 'none',
-      boxShadow: '0 4px 24px rgba(0,0,0,0.3)',
-      opacity: '0',
-      transition: 'opacity 0.2s ease, transform 0.2s ease',
-    });
-    document.body.appendChild(toast);
-    requestAnimationFrame(() => {
-      toast.style.opacity = '1';
-      toast.style.transform = 'translateX(-50%) translateY(0)';
-    });
-    setTimeout(() => {
-      toast.style.opacity = '0';
-      toast.style.transform = 'translateX(-50%) translateY(10px)';
-      setTimeout(() => toast.remove(), 220);
-    }, 1800);
-  }
-
   function createButton() {
     const btn = document.createElement('button');
     btn.id = BTN_ID;
@@ -125,7 +90,6 @@
       btn.style.color = next === 'dark' ? 'rgba(255,255,255,0.55)' : 'rgba(0,0,0,0.5)';
       btn.style.transform = 'scale(0.8) rotate(20deg)';
       setTimeout(() => { btn.style.transform = 'scale(1) rotate(0deg)'; }, 180);
-      showToast(next === 'dark' ? '🌙 Dark mode' : '☀️ Light mode');
     });
 
     return btn;
