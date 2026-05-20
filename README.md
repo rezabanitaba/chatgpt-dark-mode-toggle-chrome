@@ -4,6 +4,9 @@ A minimal Chrome extension that adds a one-click dark/light mode toggle to the C
 
 ---
 
+<img width="2559" height="1224" alt="image" src="https://github.com/user-attachments/assets/f27bc693-a1db-4d3d-a92d-b1f05ecb104b" />
+
+
 ## ✨ Features
 
 - 🌙 / ☀️ Moon and sun icons toggle between dark and light mode instantly
