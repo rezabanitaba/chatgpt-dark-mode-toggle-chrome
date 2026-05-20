@@ -6,6 +6,9 @@ A minimal Chrome extension that adds a one-click dark/light mode toggle to the C
 
 <img width="2559" height="1224" alt="image" src="https://github.com/user-attachments/assets/f27bc693-a1db-4d3d-a92d-b1f05ecb104b" />
 
+<img width="2559" height="1232" alt="image" src="https://github.com/user-attachments/assets/0a6303e2-1e2f-4a9c-aba8-60886379e782" />
+
+
 
 ## ✨ Features
 
