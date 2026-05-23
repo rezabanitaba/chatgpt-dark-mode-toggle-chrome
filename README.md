@@ -12,10 +12,7 @@ A minimal Chrome extension that adds a one-click dark/light mode toggle to the C
 - 🌙 / ☀️ Moon and sun icons toggle between dark and light mode instantly
 - Floats fixed in the bottom-left sidebar, above your avatar
 - Works with ChatGPT's own `localStorage` theme system — no CSS hacks
-- Survives SPA navigation (MutationObserver keeps the button alive)
-- Subtle click animation + toast confirmation
 - Zero permissions beyond `chatgpt.com` access
-
 ---
 
 ## 📁 File Structure
